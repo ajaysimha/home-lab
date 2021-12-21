@@ -2676,3 +2676,135 @@ The offending line appears to be:
 
 2021-12-13 23:46:39,925 p=24945 u=simhaaj n=ansible | PLAY RECAP ********************************************************************************************************************************************************************************
 2021-12-13 23:46:39,926 p=24945 u=simhaaj n=ansible | nuc1                       : ok=4    changed=2    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-12-18 20:20:55,747 p=37253 u=simhaaj n=ansible | - Role 01-update-centos was created successfully
+2021-12-18 20:30:59,927 p=38497 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-18 20:30:59,960 p=38497 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-18 20:31:00,537 p=38497 u=simhaaj n=ansible | fatal: [nuc2]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ansible@192.168.1.202: Permission denied (publickey,password).
+
+2021-12-18 20:31:00,538 p=38497 u=simhaaj n=ansible | fatal: [nuc1]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ansible@192.168.1.201: Permission denied (publickey,gssapi-keyex,gssapi-with-mic,password).
+
+2021-12-18 20:31:00,539 p=38497 u=simhaaj n=ansible | fatal: [nuc3]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ansible@192.168.1.203: Permission denied (publickey,password).
+
+2021-12-18 20:31:00,543 p=38497 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-18 20:31:00,543 p=38497 u=simhaaj n=ansible | nuc1                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:31:00,543 p=38497 u=simhaaj n=ansible | nuc2                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:31:00,543 p=38497 u=simhaaj n=ansible | nuc3                       : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:43:20,780 p=40736 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-18 20:43:20,794 p=40736 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-18 20:43:24,990 p=40736 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-18 20:43:25,013 p=40736 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-18 20:43:25,437 p=40736 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-18 20:43:25,464 p=40736 u=simhaaj n=ansible | TASK [01-update-centos : Update yum repo and cache] ********************************************************************************
+2021-12-18 20:43:27,636 p=40736 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: cache_valid_time, force_apt_get. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-18 20:43:27,721 p=40736 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: cache_valid_time, force_apt_get. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-18 20:43:27,784 p=40736 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: cache_valid_time, force_apt_get. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-18 20:43:27,789 p=40736 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-18 20:43:27,789 p=40736 u=simhaaj n=ansible | nuc1                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:43:27,789 p=40736 u=simhaaj n=ansible | nuc2                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:43:27,790 p=40736 u=simhaaj n=ansible | nuc3                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:46:49,702 p=40925 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-18 20:46:49,716 p=40925 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-18 20:46:53,452 p=40925 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-18 20:46:53,609 p=40925 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-18 20:46:54,033 p=40925 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-18 20:46:54,056 p=40925 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-18 20:51:31,090 p=40925 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host 192.168.1.202 port 22: Operation timed out
+
+2021-12-18 20:51:35,966 p=40925 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host 192.168.1.201 port 22: Operation timed out
+
+2021-12-18 20:51:37,164 p=40925 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host 192.168.1.203 port 22: Operation timed out
+
+2021-12-18 20:51:37,166 p=40925 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-18 20:51:37,166 p=40925 u=simhaaj n=ansible | nuc1                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:51:37,166 p=40925 u=simhaaj n=ansible | nuc2                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-18 20:51:37,166 p=40925 u=simhaaj n=ansible | nuc3                       : ok=1    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-20 20:24:17,853 p=75595 u=simhaaj n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nucs
+
+2021-12-20 20:24:17,864 p=75595 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-20 20:24:17,865 p=75595 u=simhaaj n=ansible | skipping: no hosts matched
+2021-12-20 20:24:17,865 p=75595 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-20 20:24:38,391 p=75660 u=simhaaj n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nucs
+
+2021-12-20 20:24:38,393 p=75660 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-20 20:24:38,393 p=75660 u=simhaaj n=ansible | skipping: no hosts matched
+2021-12-20 20:24:38,393 p=75660 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-20 20:24:58,319 p=75719 u=simhaaj n=ansible | [WARNING]: Could not match supplied host pattern, ignoring: nucs
+
+2021-12-20 20:24:58,320 p=75719 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-20 20:24:58,320 p=75719 u=simhaaj n=ansible | skipping: no hosts matched
+2021-12-20 20:24:58,320 p=75719 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-20 20:25:47,562 p=75786 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-20 20:25:47,581 p=75786 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-20 20:26:03,300 p=75786 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-20 20:26:03,638 p=75786 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-20 20:26:04,461 p=75786 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-20 20:26:04,482 p=75786 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-20 20:29:28,551 p=75786 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-20 20:29:36,774 p=75786 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-20 20:30:08,421 p=75786 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-20 20:30:08,435 p=75786 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-20 20:30:11,684 p=75786 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-20 20:30:11,775 p=75786 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-20 20:30:12,247 p=75786 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-20 20:30:12,268 p=75786 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-20 20:30:45,811 p=75786 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-20 20:30:45,858 p=75786 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-20 20:30:48,026 p=75786 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux1              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux2              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux3              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
