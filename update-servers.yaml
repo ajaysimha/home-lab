@@ -3,7 +3,10 @@
   gather_facts: True
   vars:
     docker_compose_version: "v2.2.2"
+  
   roles:
-    - 01-update-centos
-  #  - 02-k8s-prep
-  #  - 03-docker-install
+    - { role: "01-update-ubuntu", when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'}
+    - { role: "01-update-centos", when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'}
+    - { role: "02-k8s-prep"}
+    - { role: "03-docker-install-centos", when: ansible_distribution == 'CentOS' or ansible_distribution == 'Red Hat Enterprise Linux'}
+    - { role: "03-docker-install-ubuntu", when: ansible_distribution == 'Debian' or ansible_distribution == 'Ubuntu'}

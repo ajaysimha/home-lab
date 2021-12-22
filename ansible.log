@@ -2808,3 +2808,167 @@ Failed to connect to the host via ssh: ssh: connect to host 192.168.1.203 port 2
 2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux1              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux2              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2021-12-20 20:30:48,076 p=75786 u=simhaaj n=ansible | asimha-linux3              : ok=4    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-21 12:08:54,792 p=82983 u=simhaaj n=ansible | - Role 03-docker-install-centos was created successfully
+2021-12-21 12:38:50,318 p=88692 u=simhaaj n=ansible | ERROR! - the directory ./03-docker-install-centos already exists. You can use --force to re-initialize this directory,
+however it will reset any main.yml files that may have
+been modified there already.
+2021-12-21 12:39:32,360 p=88786 u=simhaaj n=ansible | ERROR! 'include_role' is not a valid attribute for a Play
+
+The error appears to be in '/Users/simhaaj/home-lab/update-servers.yaml': line 7, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- include_role:
+  ^ here
+
+2021-12-21 12:47:30,227 p=90196 u=simhaaj n=ansible | ERROR! 'when' is not a valid attribute for a Play
+
+The error appears to be in '/Users/simhaaj/home-lab/update-servers.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: centos
+  ^ here
+
+2021-12-21 12:48:49,675 p=90275 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-21 12:48:49,694 p=90275 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-21 12:48:59,017 p=90275 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-21 12:49:18,061 p=90427 u=simhaaj n=ansible | ERROR! 'when' is not a valid attribute for a Play
+
+The error appears to be in '/Users/simhaaj/home-lab/update-servers.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: centos
+  ^ here
+
+2021-12-21 12:51:12,769 p=90517 u=simhaaj n=ansible | ERROR! 'when' is not a valid attribute for a Play
+
+The error appears to be in '/Users/simhaaj/home-lab/update-servers.yaml': line 2, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+---
+- hosts: centos
+  ^ here
+
+2021-12-21 12:55:18,609 p=91778 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-21 12:55:18,627 p=91778 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-21 12:55:32,855 p=91778 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 12:55:33,075 p=91778 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-21 12:56:40,842 p=91896 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-21 12:56:40,858 p=91896 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-21 12:56:56,445 p=91896 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 12:56:56,710 p=91896 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 12:56:58,186 p=91896 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 12:56:58,204 p=91896 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-21 12:56:58,240 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 12:56:58,241 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 12:56:58,250 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 12:56:58,259 p=91896 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-21 12:56:58,279 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 12:56:58,295 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 12:56:58,306 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 12:56:58,315 p=91896 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-21 12:56:58,335 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 12:56:58,350 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 12:56:58,362 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 12:56:58,374 p=91896 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-21 12:56:58,395 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 12:56:58,410 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 12:56:58,420 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 12:56:58,449 p=91896 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-21 12:57:04,284 p=91896 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 12:57:04,292 p=91896 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 12:57:07,866 p=91896 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 12:57:07,882 p=91896 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-21 12:57:10,815 p=91896 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 12:57:10,848 p=91896 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 12:57:11,124 p=91896 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 12:57:11,140 p=91896 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-21 12:57:11,178 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 12:57:11,180 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 12:57:11,192 p=91896 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 12:57:11,226 p=91896 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-21 12:57:11,226 p=91896 u=simhaaj n=ansible | asimha-linux1              : ok=3    changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-21 12:57:11,226 p=91896 u=simhaaj n=ansible | asimha-linux2              : ok=3    changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-21 12:57:11,226 p=91896 u=simhaaj n=ansible | asimha-linux3              : ok=3    changed=0    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-21 20:00:42,886 p=57606 u=simhaaj n=ansible | ERROR! unexpected parameter type in action: <class 'ansible.parsing.yaml.objects.AnsibleSequence'>
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 3, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+# tasks file for 03-docker-install-centos
+- name: Install docker
+  ^ here
+
+2021-12-21 20:21:33,886 p=60416 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-21 20:21:33,910 p=60416 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-21 20:21:50,365 p=60416 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 20:21:50,496 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 20:21:50,843 p=60416 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 20:21:50,862 p=60416 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-21 20:21:50,883 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 20:21:50,900 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 20:21:50,913 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 20:21:50,923 p=60416 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-21 20:21:50,945 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 20:21:50,962 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 20:21:50,974 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 20:21:50,983 p=60416 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-21 20:21:51,005 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 20:21:51,024 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 20:21:51,035 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 20:21:51,049 p=60416 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-21 20:21:51,071 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 20:21:51,091 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 20:21:51,103 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 20:21:51,139 p=60416 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-21 20:21:58,570 p=60416 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 20:21:59,886 p=60416 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 20:22:02,653 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 20:22:02,670 p=60416 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-21 20:22:05,953 p=60416 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 20:22:06,011 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 20:22:06,902 p=60416 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 20:22:06,920 p=60416 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-21 20:22:06,950 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-21 20:22:06,968 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-21 20:22:06,981 p=60416 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-21 20:22:07,014 p=60416 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-21 20:22:10,273 p=60416 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-21 20:22:10,276 p=60416 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-21 20:22:10,305 p=60416 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-21 20:22:10,316 p=60416 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-21 20:22:13,164 p=60416 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-21 20:22:13,528 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-21 20:22:13,671 p=60416 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-21 20:22:13,693 p=60416 u=simhaaj n=ansible | TASK [02-k8s-prep : Initialize mac-list] *******************************************************************************************
+2021-12-21 20:22:13,722 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1 -> localhost]
+2021-12-21 20:22:13,743 p=60416 u=simhaaj n=ansible | ok: [asimha-linux2 -> localhost]
+2021-12-21 20:22:13,758 p=60416 u=simhaaj n=ansible | ok: [asimha-linux3 -> localhost]
+2021-12-21 20:22:13,815 p=60416 u=simhaaj n=ansible | TASK [02-k8s-prep : Get the MAC address] *******************************************************************************************
+2021-12-21 20:22:13,859 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1 -> localhost] => (item=asimha-linux1)
+2021-12-21 20:22:13,908 p=60416 u=simhaaj n=ansible | ok: [asimha-linux1 -> localhost] => (item=asimha-linux2)
+2021-12-21 20:22:13,924 p=60416 u=simhaaj n=ansible | fatal: [asimha-linux1 -> localhost]: FAILED! => {}
+
+MSG:
+
+Unexpected templating type error occurred on ({{ mac_list + hostvars[item]['ansible_interfaces'] | difference(['lo']) | map('regex_replace', '^(.*)$', 'ansible_\\1' ) | map('extract', hostvars[item], 'macaddress') }}): can only concatenate str (not "list") to str
+
+2021-12-21 20:22:13,925 p=60416 u=simhaaj n=ansible | NO MORE HOSTS LEFT *****************************************************************************************************************
+2021-12-21 20:22:13,927 p=60416 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-21 20:22:13,927 p=60416 u=simhaaj n=ansible | asimha-linux1              : ok=6    changed=1    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-21 20:22:13,927 p=60416 u=simhaaj n=ansible | asimha-linux2              : ok=6    changed=1    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-21 20:22:13,928 p=60416 u=simhaaj n=ansible | asimha-linux3              : ok=6    changed=1    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
