@@ -36,6 +36,42 @@
     value: 0
   become: yes
 
+- name: Initialize docker_installed variable
+  set_fact:
+    docker_installed: "False"
+
+- name: Check if rpm is already installed
+  yum:
+    list: docker
+  # If not installed yum_list.results[*].yumstate != installed
+  register: yum_list
+
+- name: Conditionally set variable
+  set_fact:
+    docker_installed: "True"
+  when: yum_list.results | selectattr("yumstate", "match", "installed") | list | length != 0
+
+- name: Stop Docker service and disable
+  service:
+    name: docker
+    state: stopped
+    enabled: no
+  when: docker_installed
+
+- name: Uninstall Docker
+  package:
+    name: 
+      - docker
+      - docker-client
+      - docker-client-latest 
+      - docker-common 
+      - docker-latest 
+      - docker-latest-logrotate 
+      - docker-logrotate 
+      - docker-engine
+    state: absent
+  when: docker_installed
+
 - name: Install Docker
   package:
     name: docker-ce

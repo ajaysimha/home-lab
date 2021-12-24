@@ -6506,3 +6506,1047 @@ Macaddresses on k8s hosts not unique
 2021-12-23 06:10:20,558 p=73888 u=simhaaj n=ansible | asimha-linux1              : ok=9    changed=2    unreachable=0    failed=0    skipped=1    rescued=0    ignored=0   
 2021-12-23 06:10:20,558 p=73888 u=simhaaj n=ansible | asimha-linux2              : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
 2021-12-23 06:10:20,558 p=73888 u=simhaaj n=ansible | asimha-linux3              : ok=8    changed=2    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-23 21:06:41,486 p=53186 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-23 21:06:41,507 p=53186 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-23 21:06:57,624 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:06:58,080 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:06:59,124 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:06:59,144 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-23 21:07:05,320 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:05,330 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:08,876 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:08,892 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-23 21:07:13,261 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:14,384 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:17,143 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:17,158 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-23 21:07:21,032 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:21,957 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:22,318 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:22,336 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-23 21:07:25,480 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:26,178 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:26,204 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:26,216 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-23 21:07:29,209 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:29,212 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:29,690 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:29,706 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-23 21:07:32,410 p=53186 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-23 21:07:32,560 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:33,001 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:33,018 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-23 21:07:37,134 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:37,626 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:40,703 p=53186 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {
+    "changed": true,
+    "changes": {
+        "installed": [
+            "docker-ce"
+        ],
+        "updated": []
+    },
+    "rc": 1,
+    "results": [
+        "Loaded plugins: fastestmirror, product-id, search-disabled-repos, subscription-\n              : manager\n\nThis system is not registered with an entitlement server. You can use subscription-manager to register.\n\nLoading mirror speeds from cached hostfile\n * base: mirrors.xtom.com\n * epel: mirror.lshiy.com\n * extras: mirrors.oit.uci.edu\n * updates: linux.mirrors.es.net\nResolving Dependencies\n--> Running transaction check\n---> Package docker-ce.x86_64 3:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-ce-cli for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Processing Dependency: docker-ce-rootless-extras for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Running transaction check\n---> Package docker-ce-cli.x86_64 1:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-scan-plugin(x86-64) for package: 1:docker-ce-cli-20.10.12-3.el7.x86_64\n---> Package docker-ce-rootless-extras.x86_64 0:20.10.12-3.el7 will be installed\n--> Running transaction check\n---> Package docker-scan-plugin.x86_64 0:0.12.0-3.el7 will be installed\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Finished Dependency Resolution\n You could try using --skip-broken to work around the problem\n You could try running: rpm -Va --nofiles --nodigest\n"
+    ]
+}
+
+MSG:
+
+Repository 'docker-ce-edge' is missing name in configuration, using id
+Error: docker-ce conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+Error: docker-ce-cli conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+
+
+2021-12-23 21:07:40,720 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-23 21:07:44,144 p=53186 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-23 21:07:44,687 p=53186 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-23 21:07:44,720 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-23 21:07:44,742 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,754 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,765 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-23 21:07:44,786 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,797 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,808 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-23 21:07:44,830 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,841 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,853 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-23 21:07:44,874 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,886 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,897 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-23 21:07:44,919 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,931 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,940 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-23 21:07:44,962 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:44,974 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:44,984 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-23 21:07:45,006 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:45,018 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:45,030 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-23 21:07:45,051 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:45,064 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:45,074 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-23 21:07:45,097 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:45,109 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:45,121 p=53186 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-23 21:07:45,143 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-23 21:07:45,155 p=53186 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-23 21:07:45,187 p=53186 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-23 21:07:45,187 p=53186 u=simhaaj n=ansible | asimha-linux1              : ok=7    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-23 21:07:45,187 p=53186 u=simhaaj n=ansible | asimha-linux2              : ok=9    changed=0    unreachable=0    failed=0    skipped=10   rescued=0    ignored=0   
+2021-12-23 21:07:45,187 p=53186 u=simhaaj n=ansible | asimha-linux3              : ok=9    changed=0    unreachable=0    failed=0    skipped=10   rescued=0    ignored=0   
+2021-12-24 17:31:23,087 p=62669 u=simhaaj n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected key
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 66, column 31, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+  become: yes
+  when: 'docker_ce_installed' == "False"
+                              ^ here
+This one looks easy to fix. It seems that there is a value started
+with a quote, and the YAML parser is expecting to see the line ended
+with the same kind of quote. For instance:
+
+    when: "ok" in result.stdout
+
+Could be written as:
+
+   when: '"ok" in result.stdout'
+
+Or equivalently:
+
+   when: "'ok' in result.stdout"
+
+2021-12-24 17:32:06,423 p=62772 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 17:32:06,446 p=62772 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 17:32:22,278 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:23,260 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:23,282 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:23,301 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 17:32:28,064 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:28,071 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:33,078 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:33,090 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 17:32:37,756 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:37,979 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:38,728 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:38,737 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 17:32:43,391 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:43,941 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:44,558 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:44,566 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 17:32:47,690 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:48,090 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:48,367 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:48,377 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 17:32:51,397 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:51,432 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:51,432 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:51,442 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 17:32:54,338 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:55,039 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:55,493 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:55,505 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_ce_installed variable] **********************************************************
+2021-12-24 17:32:55,539 p=62772 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:32:55,543 p=62772 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:32:55,557 p=62772 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:32:55,567 p=62772 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if Docker is installed] *********************************************************************
+2021-12-24 17:32:55,604 p=62772 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 43, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Check if Docker is installed
+  ^ here
+
+
+2021-12-24 17:32:55,606 p=62772 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 43, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Check if Docker is installed
+  ^ here
+
+
+2021-12-24 17:32:55,619 p=62772 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 43, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Check if Docker is installed
+  ^ here
+
+
+2021-12-24 17:32:55,622 p=62772 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 17:32:55,622 p=62772 u=simhaaj n=ansible | asimha-linux1              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:32:55,622 p=62772 u=simhaaj n=ansible | asimha-linux2              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:32:55,622 p=62772 u=simhaaj n=ansible | asimha-linux3              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:35:33,371 p=63394 u=simhaaj n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  did not find expected '-' indicator
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 1, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+debug:
+^ here
+
+2021-12-24 17:36:51,609 p=63575 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 17:36:51,629 p=63575 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 17:37:07,571 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:07,650 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:08,366 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:08,384 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 17:37:12,676 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:12,765 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:13,775 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:13,788 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 17:37:17,982 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:18,491 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:19,913 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:19,925 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 17:37:23,947 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:24,921 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:25,019 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:25,029 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 17:37:28,096 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:28,210 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:28,307 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:28,320 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 17:37:31,307 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:31,344 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:32,182 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:32,192 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 17:37:35,114 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:35,136 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:35,215 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:35,239 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_ce_installed variable] **********************************************************
+2021-12-24 17:37:35,272 p=63575 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:37:35,275 p=63575 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:37:35,290 p=63575 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:37:35,303 p=63575 u=simhaaj n=ansible | TASK [03-docker-install-centos : docker_ce test] ***********************************************************************************
+2021-12-24 17:37:35,339 p=63575 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:37:35,342 p=63575 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:37:35,355 p=63575 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {}
+
+MSG:
+
+The conditional check ''docker_ce' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('docker_ce' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:37:35,358 p=63575 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 17:37:35,359 p=63575 u=simhaaj n=ansible | asimha-linux1              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:37:35,359 p=63575 u=simhaaj n=ansible | asimha-linux2              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:37:35,359 p=63575 u=simhaaj n=ansible | asimha-linux3              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:38:40,854 p=63856 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 17:38:40,873 p=63856 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 17:38:56,412 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:38:56,653 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:38:57,626 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:38:57,644 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 17:39:01,832 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:02,085 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:03,346 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:03,357 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 17:39:07,087 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:08,379 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:08,471 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:08,484 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 17:39:12,542 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:13,478 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:13,556 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:13,565 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 17:39:16,620 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:16,672 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:16,852 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:16,861 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 17:39:19,891 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:19,960 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:20,338 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:20,347 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 17:39:23,048 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:23,416 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:23,756 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:23,769 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_ce_installed variable] **********************************************************
+2021-12-24 17:39:23,806 p=63856 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 17:39:23,809 p=63856 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 17:39:23,821 p=63856 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 17:39:23,834 p=63856 u=simhaaj n=ansible | TASK [03-docker-install-centos : docker_ce test] ***********************************************************************************
+2021-12-24 17:39:23,869 p=63856 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {}
+
+MSG:
+
+The conditional check ''nginx' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('nginx' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:39:23,871 p=63856 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {}
+
+MSG:
+
+The conditional check ''nginx' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('nginx' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:39:23,884 p=63856 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {}
+
+MSG:
+
+The conditional check ''nginx' in ansible_facts.packages' failed. The error was: error while evaluating conditional ('nginx' in ansible_facts.packages): 'dict object' has no attribute 'packages'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 48, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: docker_ce test
+  ^ here
+
+
+2021-12-24 17:39:23,887 p=63856 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 17:39:23,887 p=63856 u=simhaaj n=ansible | asimha-linux1              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:39:23,888 p=63856 u=simhaaj n=ansible | asimha-linux2              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 17:39:23,888 p=63856 u=simhaaj n=ansible | asimha-linux3              : ok=8    changed=0    unreachable=0    failed=1    skipped=0    rescued=0    ignored=0   
+2021-12-24 18:03:40,565 p=65927 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:03:40,588 p=65927 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:03:59,016 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:03:59,650 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:02,085 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:02,110 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:04:07,494 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:07,856 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:07,894 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:07,903 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:04:12,125 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:12,132 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:13,097 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:13,112 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:04:17,132 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:17,319 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:20,982 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:20,998 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:04:24,408 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:24,653 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:25,135 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:25,149 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:04:28,535 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:28,564 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:28,589 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:28,602 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:04:31,619 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:31,774 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:32,647 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:32,668 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_ce_installed variable] **********************************************************
+2021-12-24 18:04:32,707 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:32,710 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:32,724 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:32,734 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:04:36,592 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:36,843 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:38,419 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:38,438 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally do next thing] **********************************************************************
+2021-12-24 18:04:38,481 p=65927 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 18:04:38,489 p=65927 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:04:38,506 p=65927 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:04:38,520 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:04:42,897 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:43,179 p=65927 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-24 18:04:43,609 p=65927 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-24 18:04:43,627 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:04:46,680 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:46,755 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:47,043 p=65927 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:04:47,059 p=65927 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 18:04:50,982 p=65927 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:04:51,199 p=65927 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:04:52,767 p=65927 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-24 18:05:20,015 p=66330 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:05:20,034 p=66330 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:05:35,376 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:05:36,477 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:05:36,600 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:05:36,621 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:05:41,469 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:05:41,480 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:05:43,629 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:05:43,645 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:05:47,851 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:05:47,899 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:05:48,832 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:05:48,846 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:05:53,026 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:05:53,168 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:05:54,152 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:05:54,171 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:05:57,157 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:05:57,502 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:05:58,139 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:05:58,155 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:06:01,083 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:06:01,210 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:06:01,463 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:06:01,472 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:06:04,317 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:06:04,333 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:06:04,879 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:06:04,899 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_ce_installed variable] **********************************************************
+2021-12-24 18:06:04,940 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:06:04,943 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:06:04,960 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:06:04,970 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:06:08,576 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:06:08,703 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:06:09,537 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:06:09,554 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally do next thing] **********************************************************************
+2021-12-24 18:06:09,600 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1] => {}
+
+MSG:
+
+docker_ce installed
+
+2021-12-24 18:06:09,606 p=66330 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:06:09,623 p=66330 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:06:09,635 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:06:13,466 p=66330 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:06:13,604 p=66330 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:06:14,000 p=66330 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:06:14,016 p=66330 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:06:15,802 p=66330 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-24 18:21:14,404 p=70000 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:21:14,424 p=70000 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:21:17,831 p=70000 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-24 18:22:06,935 p=70117 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:22:06,953 p=70117 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:23:09,877 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:13,419 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:16,107 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:16,130 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:23:21,412 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:21,911 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:23,249 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:23,261 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:23:27,879 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:28,069 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:28,789 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:28,799 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:23:33,714 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:33,727 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:34,242 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:34,252 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:23:37,970 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:38,132 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:38,320 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:38,331 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:23:41,950 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:42,138 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:42,383 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:42,391 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:23:45,465 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:45,479 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:46,599 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:46,611 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 18:23:46,650 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:46,653 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:46,666 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:46,678 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:23:51,098 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:23:52,236 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:23:52,456 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:52,468 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 18:23:52,523 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:52,528 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:23:52,548 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:23:52,561 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:23:52,599 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:23:52,612 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:23:56,643 p=70117 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:23:56,658 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:23:56,694 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 18:24:00,241 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:24:00,757 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:24:00,769 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 18:24:05,359 p=70117 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:24:06,273 p=70117 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:24:08,014 p=70117 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {
+    "changed": true,
+    "changes": {
+        "installed": [
+            "docker-ce"
+        ],
+        "updated": []
+    },
+    "rc": 1,
+    "results": [
+        "Loaded plugins: fastestmirror, product-id, search-disabled-repos, subscription-\n              : manager\n\nThis system is not registered with an entitlement server. You can use subscription-manager to register.\n\nLoading mirror speeds from cached hostfile\n * base: mirrors.xtom.com\n * epel: mirror.lshiy.com\n * extras: mirrors.oit.uci.edu\n * updates: linux.mirrors.es.net\nResolving Dependencies\n--> Running transaction check\n---> Package docker-ce.x86_64 3:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-ce-cli for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Processing Dependency: docker-ce-rootless-extras for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Running transaction check\n---> Package docker-ce-cli.x86_64 1:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-scan-plugin(x86-64) for package: 1:docker-ce-cli-20.10.12-3.el7.x86_64\n---> Package docker-ce-rootless-extras.x86_64 0:20.10.12-3.el7 will be installed\n--> Running transaction check\n---> Package docker-scan-plugin.x86_64 0:0.12.0-3.el7 will be installed\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Finished Dependency Resolution\n You could try using --skip-broken to work around the problem\n You could try running: rpm -Va --nofiles --nodigest\n"
+    ]
+}
+
+MSG:
+
+Repository 'docker-ce-edge' is missing name in configuration, using id
+Error: docker-ce conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+Error: docker-ce-cli conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+
+
+2021-12-24 18:24:08,035 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-24 18:24:13,471 p=70117 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-24 18:24:15,202 p=70117 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-24 18:24:15,224 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-24 18:24:15,248 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,260 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,272 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-24 18:24:15,294 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,305 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,316 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-24 18:24:15,339 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,351 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,361 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-24 18:24:15,406 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,419 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,429 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-24 18:24:15,450 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,461 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,472 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-24 18:24:15,492 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,503 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,514 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-24 18:24:15,537 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,549 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,561 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-24 18:24:15,582 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,594 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,605 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-24 18:24:15,625 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,638 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,651 p=70117 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-24 18:24:15,672 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:24:15,684 p=70117 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:24:15,717 p=70117 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 18:24:15,717 p=70117 u=simhaaj n=ansible | asimha-linux1              : ok=11   changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-12-24 18:24:15,718 p=70117 u=simhaaj n=ansible | asimha-linux2              : ok=12   changed=1    unreachable=0    failed=0    skipped=12   rescued=0    ignored=0   
+2021-12-24 18:24:15,718 p=70117 u=simhaaj n=ansible | asimha-linux3              : ok=12   changed=1    unreachable=0    failed=0    skipped=12   rescued=0    ignored=0   
+2021-12-24 18:52:52,895 p=73247 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:52:52,917 p=73247 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:53:09,276 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:09,355 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:09,531 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:09,550 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:53:14,033 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:14,529 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:15,661 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:15,671 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:53:19,594 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:20,461 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:23,123 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:23,132 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:53:26,855 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:28,054 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:28,228 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:28,238 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:53:31,505 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:32,219 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:32,522 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:32,530 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:53:35,513 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:36,085 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:36,189 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:36,199 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:53:39,169 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:39,313 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:39,419 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:39,431 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 18:53:39,468 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:39,472 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:39,487 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:39,498 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:53:42,734 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:42,854 p=73247 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:53:44,240 p=73247 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:53:44,253 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 18:53:44,300 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:44,302 p=73247 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:53:44,317 p=73247 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:53:44,329 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:53:44,366 p=73247 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:53:44,378 p=73247 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:53:47,671 p=73247 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:53:47,690 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:53:47,722 p=73247 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 18:53:50,648 p=73247 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+argument 'name' is of type <type 'dict'> and we were unable to convert to list: <type 'dict'> cannot be converted to a list
+
+2021-12-24 18:53:51,515 p=73247 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+argument 'name' is of type <type 'dict'> and we were unable to convert to list: <type 'dict'> cannot be converted to a list
+
+2021-12-24 18:53:51,528 p=73247 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 18:53:53,739 p=73247 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-24 18:55:24,664 p=73640 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:55:24,686 p=73640 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:55:40,464 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:55:40,720 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:55:41,769 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:55:41,788 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:55:46,434 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:55:47,463 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:55:48,951 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:55:48,966 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:55:52,534 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:55:53,211 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:55:54,801 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:55:54,811 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:55:58,652 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:55:58,733 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:00,473 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:00,484 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:56:03,561 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:03,740 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:03,780 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:03,792 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:56:06,806 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:06,921 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:07,399 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:07,409 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:56:10,126 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:10,729 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:11,333 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:11,345 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 18:56:11,378 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:11,381 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:11,397 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:11,406 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:56:14,759 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:14,762 p=73640 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:16,119 p=73640 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:16,134 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 18:56:16,179 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:16,183 p=73640 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:56:16,199 p=73640 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:56:16,211 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:56:16,245 p=73640 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:56:16,257 p=73640 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:56:20,005 p=73640 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:20,016 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:56:20,050 p=73640 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 18:56:22,891 p=73640 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: with_items. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-24 18:56:25,059 p=73640 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: with_items. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-24 18:56:25,070 p=73640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 18:56:26,173 p=73640 u=simhaaj n=ansible |  [ERROR]: User interrupted execution
+
+2021-12-24 18:56:42,350 p=74293 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:56:42,366 p=74293 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:56:56,554 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:56:56,837 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:56:58,821 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:56:58,838 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:57:02,883 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:02,995 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:04,343 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:04,352 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:57:08,240 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:09,231 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:09,838 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:09,847 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:57:13,854 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:14,113 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:14,784 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:14,794 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:57:18,031 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:18,270 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:19,236 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:19,245 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:57:22,233 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:22,347 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:22,568 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:22,577 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:57:25,375 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:25,525 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:25,737 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:25,749 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 18:57:25,782 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:25,785 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:25,799 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:25,810 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:57:29,185 p=74293 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:57:29,419 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:30,173 p=74293 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:57:30,183 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 18:57:30,222 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:30,234 p=74293 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:57:30,249 p=74293 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:57:30,259 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:57:30,295 p=74293 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:57:30,308 p=74293 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:57:34,323 p=74293 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:57:34,336 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:57:34,358 p=74293 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 18:57:37,090 p=74293 u=simhaaj n=ansible | fatal: [asimha-linux3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: with_items. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-24 18:57:37,506 p=74293 u=simhaaj n=ansible | fatal: [asimha-linux2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+Unsupported parameters for (ansible.legacy.yum) module: with_items. Supported parameters include: lock_timeout, conf_file, exclude, allow_downgrade, disable_gpg_check, disable_excludes, use_backend, validate_certs, state, disablerepo, releasever, skip_broken, autoremove, download_dir, name (pkg), installroot, install_weak_deps, update_cache (expire-cache), download_only, bugfix, list, install_repoquery, update_only, disable_plugin, enablerepo, security, enable_plugin.
+
+2021-12-24 18:57:37,515 p=74293 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 18:57:44,152 p=74293 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {
+    "changed": true,
+    "changes": {
+        "installed": [
+            "docker-ce"
+        ],
+        "updated": []
+    },
+    "rc": 1,
+    "results": [
+        "Loaded plugins: fastestmirror, product-id, search-disabled-repos, subscription-\n              : manager\n\nThis system is not registered with an entitlement server. You can use subscription-manager to register.\n\nLoading mirror speeds from cached hostfile\n * base: mirrors.xtom.com\n * epel: mirror.lshiy.com\n * extras: mirrors.oit.uci.edu\n * updates: linux.mirrors.es.net\nResolving Dependencies\n--> Running transaction check\n---> Package docker-ce.x86_64 3:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-ce-cli for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Processing Dependency: docker-ce-rootless-extras for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Running transaction check\n---> Package docker-ce-cli.x86_64 1:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-scan-plugin(x86-64) for package: 1:docker-ce-cli-20.10.12-3.el7.x86_64\n---> Package docker-ce-rootless-extras.x86_64 0:20.10.12-3.el7 will be installed\n--> Running transaction check\n---> Package docker-scan-plugin.x86_64 0:0.12.0-3.el7 will be installed\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Finished Dependency Resolution\n You could try using --skip-broken to work around the problem\n You could try running: rpm -Va --nofiles --nodigest\n"
+    ]
+}
+
+MSG:
+
+Repository 'docker-ce-edge' is missing name in configuration, using id
+Error: docker-ce conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+Error: docker-ce-cli conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+
+
+2021-12-24 18:57:44,154 p=74293 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 18:57:44,154 p=74293 u=simhaaj n=ansible | asimha-linux1              : ok=11   changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-12-24 18:57:44,154 p=74293 u=simhaaj n=ansible | asimha-linux2              : ok=9    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-12-24 18:57:44,155 p=74293 u=simhaaj n=ansible | asimha-linux3              : ok=9    changed=0    unreachable=0    failed=1    skipped=2    rescued=0    ignored=0   
+2021-12-24 18:59:10,241 p=75016 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 18:59:10,256 p=75016 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 18:59:20,763 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:22,545 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:26,054 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:26,071 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 18:59:30,135 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:30,166 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:31,228 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:31,238 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 18:59:34,884 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:36,091 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:36,216 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:36,225 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 18:59:39,863 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:40,441 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:41,399 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:41,410 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 18:59:44,614 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:44,642 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:45,119 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:45,129 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 18:59:47,983 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:48,265 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:48,545 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:48,555 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 18:59:51,195 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:51,257 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:51,477 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:51,490 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 18:59:51,525 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:51,527 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:51,542 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:51,553 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 18:59:54,720 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:54,963 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 18:59:56,112 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 18:59:56,123 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 18:59:56,168 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:56,181 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:59:56,195 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:59:56,207 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 18:59:56,247 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 18:59:56,260 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 18:59:59,439 p=75016 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 18:59:59,451 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 18:59:59,490 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:00:02,597 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:00:02,936 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:00:02,949 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 19:00:07,044 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:00:07,265 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:00:10,493 p=75016 u=simhaaj n=ansible | fatal: [asimha-linux1]: FAILED! => {
+    "changed": true,
+    "changes": {
+        "installed": [
+            "docker-ce"
+        ],
+        "updated": []
+    },
+    "rc": 1,
+    "results": [
+        "Loaded plugins: fastestmirror, product-id, search-disabled-repos, subscription-\n              : manager\n\nThis system is not registered with an entitlement server. You can use subscription-manager to register.\n\nLoading mirror speeds from cached hostfile\n * base: mirrors.xtom.com\n * epel: mirror.lshiy.com\n * extras: mirrors.oit.uci.edu\n * updates: linux.mirrors.es.net\nResolving Dependencies\n--> Running transaction check\n---> Package docker-ce.x86_64 3:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-ce-cli for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Processing Dependency: docker-ce-rootless-extras for package: 3:docker-ce-20.10.12-3.el7.x86_64\n--> Running transaction check\n---> Package docker-ce-cli.x86_64 1:20.10.12-3.el7 will be installed\n--> Processing Dependency: docker-scan-plugin(x86-64) for package: 1:docker-ce-cli-20.10.12-3.el7.x86_64\n---> Package docker-ce-rootless-extras.x86_64 0:20.10.12-3.el7 will be installed\n--> Running transaction check\n---> Package docker-scan-plugin.x86_64 0:0.12.0-3.el7 will be installed\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 1:docker-ce-cli-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker\n--> Processing Conflict: 3:docker-ce-20.10.12-3.el7.x86_64 conflicts docker-io\n--> Finished Dependency Resolution\n You could try using --skip-broken to work around the problem\n You could try running: rpm -Va --nofiles --nodigest\n"
+    ]
+}
+
+MSG:
+
+Repository 'docker-ce-edge' is missing name in configuration, using id
+Error: docker-ce conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+Error: docker-ce-cli conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
+
+
+2021-12-24 19:00:10,506 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-24 19:00:13,714 p=75016 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:00:14,269 p=75016 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:00:14,294 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-24 19:00:14,316 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,328 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,339 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-24 19:00:14,362 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,374 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,385 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-24 19:00:14,408 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,421 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,431 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-24 19:00:14,455 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,464 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,478 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-24 19:00:14,504 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,520 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,534 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-24 19:00:14,562 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,575 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,587 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-24 19:00:14,612 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,624 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,638 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-24 19:00:14,663 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,677 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,689 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-24 19:00:14,711 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,723 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,738 p=75016 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-24 19:00:14,763 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:00:14,775 p=75016 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:00:14,810 p=75016 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 19:00:14,811 p=75016 u=simhaaj n=ansible | asimha-linux1              : ok=11   changed=0    unreachable=0    failed=1    skipped=1    rescued=0    ignored=0   
+2021-12-24 19:00:14,811 p=75016 u=simhaaj n=ansible | asimha-linux2              : ok=12   changed=0    unreachable=0    failed=0    skipped=12   rescued=0    ignored=0   
+2021-12-24 19:00:14,811 p=75016 u=simhaaj n=ansible | asimha-linux3              : ok=12   changed=0    unreachable=0    failed=0    skipped=12   rescued=0    ignored=0   
+2021-12-24 19:00:40,623 p=75489 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 19:00:40,640 p=75489 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 19:00:54,744 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:00:56,094 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:00:56,250 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:00:56,269 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-24 19:01:00,760 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:00,927 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:01,683 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:01,693 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-24 19:01:06,771 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:06,836 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:08,060 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:08,069 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-24 19:01:11,857 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:12,071 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:14,268 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:14,280 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-24 19:01:17,340 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:17,371 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:19,374 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:19,385 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-24 19:01:22,543 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:22,613 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:22,766 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:22,778 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-24 19:01:25,408 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:25,541 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:25,607 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:25,617 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-24 19:01:25,651 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:25,654 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:25,669 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:25,680 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-24 19:01:28,992 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:29,024 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:29,201 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:29,212 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-24 19:01:29,254 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:29,264 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:01:29,281 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:01:29,291 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-24 19:01:29,331 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:01:29,344 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:01:32,513 p=75489 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 19:01:32,524 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-24 19:01:32,565 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:01:32,579 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:01:37,336 p=75489 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-24 19:01:37,346 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-24 19:01:41,034 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:01:42,836 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:53,646 p=75489 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-24 19:01:53,656 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-24 19:01:56,710 p=75489 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 19:01:56,960 p=75489 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 19:02:08,739 p=75489 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-24 19:02:08,772 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-24 19:02:08,794 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:08,814 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:08,827 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:08,839 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-24 19:02:08,864 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:08,882 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:08,896 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:08,906 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-24 19:02:08,928 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:08,948 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:08,963 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:08,973 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-24 19:02:08,998 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,016 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,030 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,040 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-24 19:02:09,064 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,083 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,096 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,107 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-24 19:02:09,130 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,151 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,164 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,174 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-24 19:02:09,198 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,220 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,232 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,244 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-24 19:02:09,268 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,289 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,301 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,312 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-24 19:02:09,337 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,357 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,369 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,383 p=75489 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-24 19:02:09,406 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux1]
+2021-12-24 19:02:09,443 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux2]
+2021-12-24 19:02:09,456 p=75489 u=simhaaj n=ansible | skipping: [asimha-linux3]
+2021-12-24 19:02:09,495 p=75489 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 19:02:09,495 p=75489 u=simhaaj n=ansible | asimha-linux1              : ok=14   changed=3    unreachable=0    failed=0    skipped=10   rescued=0    ignored=0   
+2021-12-24 19:02:09,495 p=75489 u=simhaaj n=ansible | asimha-linux2              : ok=11   changed=0    unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
+2021-12-24 19:02:09,496 p=75489 u=simhaaj n=ansible | asimha-linux3              : ok=11   changed=0    unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
