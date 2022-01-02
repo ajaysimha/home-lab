@@ -1,4 +1,11 @@
-[centos]
-asimha-linux1
-asimha-linux2
-asimha-linux3
+[nucs]
+nuc1
+nuc2
+nuc3
+
+[master]
+nuc1
+
+[workers]
+nuc2
+nuc3

@@ -10,28 +10,28 @@
     regexp: '^([^#].*?\sswap\s+sw\s+.*)$'
     replace: '# \1'
 
-- name: Initialize mac-list
-  set_fact:
-    mac_list: [""] 
-    # For testing - use your own MACs
-    #mac_list: ["00:50:56:ac:11:7b"]
-  delegate_to: localhost
+# - name: Initialize mac-list
+#   set_fact:
+#     mac_list: [""] 
+#     # For testing - use your own MACs
+#     #mac_list: ["00:50:56:ac:11:7b"]
+#   delegate_to: localhost
 
-- name: Get the MAC address
-  set_fact: 
-    mac_list: "{{ mac_list + hostvars[item]['ansible_interfaces'] | difference(['lo']) | map('regex_replace', '^(.*)$', 'ansible_\\1' ) | map('extract', hostvars[item], 'macaddress') }}"
-  loop:
-    "{{ ansible_play_hosts_all }}"
-  run_once: yes
-  delegate_to: localhost
+# - name: Get the MAC address
+#   set_fact: 
+#     mac_list: "{{ mac_list + hostvars[item]['ansible_interfaces'] | difference(['lo']) | map('regex_replace', '^(.*)$', 'ansible_\\1' ) | map('extract', hostvars[item], 'macaddress') }}"
+#   loop:
+#     "{{ ansible_play_hosts_all }}"
+#   run_once: yes
+#   delegate_to: localhost
 
-- name: Print mac_list
-  fail: 
-    msg: "Macaddresses on k8s hosts not unique"
-  when:
-    mac_list | length != mac_list | unique | length
-  delegate_to: localhost
-  run_once: yes
+# - name: Print mac_list
+#   fail: 
+#     msg: "Macaddresses on k8s hosts not unique"
+#   when:
+#     mac_list | length != mac_list | unique | length
+#   delegate_to: localhost
+#   run_once: yes
 
 - name: Make sure br_netfilter module is loaded
   modprobe:
@@ -54,3 +54,32 @@
 - name: Run sysctl system
   shell: sysctl -p --system
   become: yes
+
+- name: Open ports for k8s in firewall for Master
+  hosts: master
+  firewalld:
+    port: "{{ item }}"
+    masquerade: yes
+    immediate: true
+  with_items:
+      - 6443/tcp
+      - 2379-2380/tcp
+      - 10250-10252/tcp
+      - 10255/tcp
+
+- name: Open ports for k8s in firewall for Master
+  hosts: workers
+  firewalld:
+    port: "{{ item }}"
+    masquerade: yes
+    immediate: true
+  with_items:
+      - 10250/tcp
+      - 10255/tcp
+      - 8472/udp
+      - 30000-32767/tcp
+
+- name: Restart firewalld service
+  systemd:
+    name: firewalld
+    state: reloaded 

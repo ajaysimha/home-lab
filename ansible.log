@@ -7651,3 +7651,2663 @@ Error: docker-ce-cli conflicts with 2:docker-1.13.1-208.git7d71120.el7_9.x86_64
 2021-12-24 19:08:50,965 p=76194 u=simhaaj n=ansible | asimha-linux1              : ok=11   changed=3    unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
 2021-12-24 19:08:50,965 p=76194 u=simhaaj n=ansible | asimha-linux2              : ok=11   changed=3    unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
 2021-12-24 19:08:50,965 p=76194 u=simhaaj n=ansible | asimha-linux3              : ok=11   changed=3    unreachable=0    failed=0    skipped=13   rescued=0    ignored=0   
+2021-12-24 20:06:04,105 p=82155 u=simhaaj n=ansible | - Role 04-k8s-install-centos was created successfully
+2021-12-24 20:14:49,156 p=83077 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-24 20:14:49,175 p=83077 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-24 20:14:58,199 p=83077 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-24 20:15:04,925 p=83077 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-24 20:15:05,430 p=83077 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-24 20:15:05,450 p=83077 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-24 20:15:12,548 p=83077 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-24 20:15:12,688 p=83077 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-24 20:15:12,995 p=83077 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-24 20:15:13,048 p=83077 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-24 20:15:13,048 p=83077 u=simhaaj n=ansible | asimha-linux1              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-24 20:15:13,048 p=83077 u=simhaaj n=ansible | asimha-linux2              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-24 20:15:13,048 p=83077 u=simhaaj n=ansible | asimha-linux3              : ok=2    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:27:23,181 p=64461 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-26 22:27:23,199 p=64461 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-26 22:27:33,367 p=64461 u=simhaaj n=ansible | fatal: [asimha-linux1]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host asimha-linux1.5gcec.vmw-nfv.rocks port 22: Operation timed out
+
+2021-12-26 22:27:33,377 p=64461 u=simhaaj n=ansible | fatal: [asimha-linux2]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host asimha-linux2.5gcec.vmw-nfv.rocks port 22: Operation timed out
+
+2021-12-26 22:27:33,378 p=64461 u=simhaaj n=ansible | fatal: [asimha-linux3]: UNREACHABLE! => {
+    "changed": false,
+    "unreachable": true
+}
+
+MSG:
+
+Failed to connect to the host via ssh: ssh: connect to host asimha-linux3.5gcec.vmw-nfv.rocks port 22: Operation timed out
+
+2021-12-26 22:27:33,380 p=64461 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-26 22:27:33,380 p=64461 u=simhaaj n=ansible | asimha-linux1              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:27:33,388 p=64461 u=simhaaj n=ansible | asimha-linux2              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:27:33,388 p=64461 u=simhaaj n=ansible | asimha-linux3              : ok=0    changed=0    unreachable=1    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:28:04,620 p=64583 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-26 22:28:04,636 p=64583 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-26 22:28:19,109 p=64583 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-26 22:28:19,191 p=64583 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-26 22:28:19,215 p=64583 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-26 22:28:19,236 p=64583 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-26 22:28:23,966 p=64583 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-26 22:28:23,967 p=64583 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-26 22:28:23,998 p=64583 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-26 22:28:24,007 p=64583 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Disable SELinux] *************************************************************************************
+2021-12-26 22:28:26,462 p=64583 u=simhaaj n=ansible | [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'. State change will take effect next reboot.
+
+2021-12-26 22:28:26,463 p=64583 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-26 22:28:26,463 p=64583 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-26 22:28:26,498 p=64583 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-26 22:28:26,514 p=64583 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Install Kubernetes packages] *************************************************************************
+2021-12-26 22:29:24,465 p=64583 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-26 22:29:26,747 p=64583 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-26 22:29:44,782 p=64583 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-26 22:29:44,824 p=64583 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-26 22:29:44,824 p=64583 u=simhaaj n=ansible | asimha-linux1              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:29:44,824 p=64583 u=simhaaj n=ansible | asimha-linux2              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:29:44,825 p=64583 u=simhaaj n=ansible | asimha-linux3              : ok=4    changed=3    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:32:07,867 p=66569 u=simhaaj n=ansible | PLAY [centos] **********************************************************************************************************************
+2021-12-26 22:32:07,883 p=66569 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-26 22:32:22,326 p=66569 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-26 22:32:22,413 p=66569 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-26 22:32:22,433 p=66569 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-26 22:32:22,450 p=66569 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-26 22:32:26,225 p=66569 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-26 22:32:26,248 p=66569 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-26 22:32:26,383 p=66569 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-26 22:32:26,394 p=66569 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Disable SELinux] *************************************************************************************
+2021-12-26 22:32:28,815 p=66569 u=simhaaj n=ansible | [WARNING]: SELinux state change will take effect next reboot
+
+2021-12-26 22:32:28,816 p=66569 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-26 22:32:28,838 p=66569 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-26 22:32:28,965 p=66569 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-26 22:32:28,976 p=66569 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Install Kubernetes packages] *************************************************************************
+2021-12-26 22:32:31,341 p=66569 u=simhaaj n=ansible | ok: [asimha-linux3]
+2021-12-26 22:32:31,355 p=66569 u=simhaaj n=ansible | ok: [asimha-linux2]
+2021-12-26 22:32:31,511 p=66569 u=simhaaj n=ansible | ok: [asimha-linux1]
+2021-12-26 22:32:31,523 p=66569 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Enable kubelet service] ******************************************************************************
+2021-12-26 22:32:33,976 p=66569 u=simhaaj n=ansible | changed: [asimha-linux3]
+2021-12-26 22:32:34,004 p=66569 u=simhaaj n=ansible | changed: [asimha-linux2]
+2021-12-26 22:32:34,054 p=66569 u=simhaaj n=ansible | changed: [asimha-linux1]
+2021-12-26 22:32:34,089 p=66569 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-26 22:32:34,090 p=66569 u=simhaaj n=ansible | asimha-linux1              : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:32:34,090 p=66569 u=simhaaj n=ansible | asimha-linux2              : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 22:32:34,090 p=66569 u=simhaaj n=ansible | asimha-linux3              : ok=5    changed=1    unreachable=0    failed=0    skipped=0    rescued=0    ignored=0   
+2021-12-26 23:43:39,939 p=74818 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-26 23:43:39,961 p=74818 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-26 23:43:41,613 p=74818 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:43:42,251 p=74818 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:43:42,511 p=74818 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:43:42,548 p=74818 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-26 23:43:42,570 p=74818 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:43:42,591 p=74818 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:43:42,606 p=74818 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:43:42,620 p=74818 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-26 23:43:42,646 p=74818 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:43:42,667 p=74818 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:43:42,680 p=74818 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:43:42,693 p=74818 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-26 23:43:42,716 p=74818 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:43:42,756 p=74818 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:43:42,770 p=74818 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:43:42,785 p=74818 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-26 23:43:42,809 p=74818 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:43:42,828 p=74818 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:43:42,840 p=74818 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:43:42,877 p=74818 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-26 23:43:47,714 p=74818 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:43:47,762 p=74818 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:43:49,311 p=74818 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:43:49,323 p=74818 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-26 23:43:49,804 p=74818 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:43:49,806 p=74818 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:43:49,820 p=74818 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:43:49,832 p=74818 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-26 23:43:49,857 p=74818 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:43:49,875 p=74818 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:43:49,889 p=74818 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:43:49,924 p=74818 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-26 23:43:50,458 p=74818 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:43:50,466 p=74818 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:43:50,469 p=74818 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:43:50,483 p=74818 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-26 23:43:50,998 p=74818 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:43:51,003 p=74818 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:43:51,005 p=74818 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:43:51,022 p=74818 u=simhaaj n=ansible | TASK [02-k8s-prep : Initialize mac-list] *******************************************************************************************
+2021-12-26 23:43:51,049 p=74818 u=simhaaj n=ansible | ok: [nuc1 -> localhost]
+2021-12-26 23:43:51,072 p=74818 u=simhaaj n=ansible | ok: [nuc2 -> localhost]
+2021-12-26 23:43:51,085 p=74818 u=simhaaj n=ansible | ok: [nuc3 -> localhost]
+2021-12-26 23:43:51,134 p=74818 u=simhaaj n=ansible | TASK [02-k8s-prep : Get the MAC address] *******************************************************************************************
+2021-12-26 23:43:51,183 p=74818 u=simhaaj n=ansible | ok: [nuc1 -> localhost] => (item=nuc1)
+2021-12-26 23:43:51,198 p=74818 u=simhaaj n=ansible | fatal: [nuc1 -> localhost]: FAILED! => {}
+
+MSG:
+
+Unexpected templating type error occurred on ({{ mac_list + hostvars[item]['ansible_interfaces'] | difference(['lo']) | map('regex_replace', '^(.*)$', 'ansible_\\1' ) | map('extract', hostvars[item], 'macaddress') }}): can only concatenate str (not "list") to str
+
+2021-12-26 23:43:51,199 p=74818 u=simhaaj n=ansible | NO MORE HOSTS LEFT *****************************************************************************************************************
+2021-12-26 23:43:51,200 p=74818 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-26 23:43:51,201 p=74818 u=simhaaj n=ansible | nuc1                       : ok=6    changed=1    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-26 23:43:51,201 p=74818 u=simhaaj n=ansible | nuc2                       : ok=6    changed=1    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-26 23:43:51,201 p=74818 u=simhaaj n=ansible | nuc3                       : ok=6    changed=1    unreachable=0    failed=0    skipped=5    rescued=0    ignored=0   
+2021-12-26 23:45:49,429 p=75066 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-26 23:45:49,451 p=75066 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-26 23:45:51,308 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:45:51,773 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:45:51,903 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:45:51,927 p=75066 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-26 23:45:51,953 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:45:51,970 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:45:51,982 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:45:51,994 p=75066 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-26 23:45:52,018 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:45:52,054 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:45:52,065 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:45:52,077 p=75066 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-26 23:45:52,099 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:45:52,116 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:45:52,127 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:45:52,142 p=75066 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-26 23:45:52,163 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:45:52,182 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:45:52,194 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:45:52,230 p=75066 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-26 23:45:54,387 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:45:54,390 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:45:54,529 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:45:54,540 p=75066 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-26 23:45:55,065 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:45:55,068 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:45:55,101 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:45:55,112 p=75066 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-26 23:45:55,134 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:45:55,153 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:45:55,169 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:45:55,205 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-26 23:45:55,726 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:45:55,726 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:45:55,738 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:45:55,750 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-26 23:45:56,261 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:45:56,264 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:45:56,273 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:45:56,285 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-26 23:45:56,816 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:45:56,818 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:45:56,829 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:45:56,845 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-26 23:45:57,855 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:45:57,857 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:45:57,868 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:45:57,880 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-26 23:45:58,510 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:45:58,522 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:45:58,528 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:45:58,540 p=75066 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-26 23:45:58,904 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:45:58,907 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:45:58,921 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:45:58,955 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-26 23:46:00,167 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:46:00,183 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:46:00,248 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:46:00,259 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-26 23:46:01,465 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:46:01,482 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:46:01,488 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:46:01,499 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-26 23:46:02,733 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:46:02,748 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:46:02,749 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:46:02,763 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-26 23:46:03,532 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:03,533 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:03,536 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:03,547 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-26 23:46:04,077 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:04,078 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:04,079 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:04,090 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-26 23:46:04,453 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:04,457 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:04,468 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:04,483 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-26 23:46:04,531 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:46:04,532 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:46:04,547 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:46:04,563 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-26 23:46:05,865 p=75066 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-26 23:46:05,871 p=75066 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-26 23:46:05,884 p=75066 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-26 23:46:05,896 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-26 23:46:05,946 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:05,953 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:05,970 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:05,985 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-26 23:46:06,007 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:06,027 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:06,042 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:06,057 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-26 23:46:06,082 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:06,100 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:06,115 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:06,129 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-26 23:46:35,460 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:35,753 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:36,344 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:36,357 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-26 23:46:39,424 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:39,442 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:39,443 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:39,481 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-26 23:46:39,503 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,521 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,538 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,552 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-26 23:46:39,576 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,595 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,607 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,620 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-26 23:46:39,647 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,668 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,680 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,694 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-26 23:46:39,717 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,757 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,769 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,780 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-26 23:46:39,802 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,822 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,838 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,851 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-26 23:46:39,873 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,894 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,904 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,918 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-26 23:46:39,941 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:39,963 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:39,976 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:39,989 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-26 23:46:40,011 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:40,031 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:40,042 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:40,054 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-26 23:46:40,075 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:40,094 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:40,105 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:40,119 p=75066 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-26 23:46:40,144 p=75066 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-26 23:46:40,167 p=75066 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-26 23:46:40,179 p=75066 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-26 23:46:40,215 p=75066 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-26 23:46:40,886 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:40,895 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:40,899 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:40,911 p=75066 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Disable SELinux] *************************************************************************************
+2021-12-26 23:46:41,679 p=75066 u=simhaaj n=ansible | [WARNING]: SELinux state temporarily changed from 'enforcing' to 'permissive'. State change will take effect next reboot.
+
+2021-12-26 23:46:41,679 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:46:41,680 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:46:41,686 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:46:41,702 p=75066 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Install Kubernetes packages] *************************************************************************
+2021-12-26 23:47:45,084 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:47:45,364 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:47:45,877 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:47:45,889 p=75066 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Enable kubelet service] ******************************************************************************
+2021-12-26 23:47:46,394 p=75066 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-26 23:47:46,404 p=75066 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-26 23:47:46,418 p=75066 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-26 23:47:46,465 p=75066 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-26 23:47:46,466 p=75066 u=simhaaj n=ansible | nuc1                       : ok=23   changed=14   unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-26 23:47:46,466 p=75066 u=simhaaj n=ansible | nuc2                       : ok=23   changed=14   unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-26 23:47:46,466 p=75066 u=simhaaj n=ansible | nuc3                       : ok=23   changed=14   unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 00:09:39,802 p=78480 u=simhaaj n=ansible | ERROR! We were unable to read either as JSON nor YAML, these are the errors we got from each:
+JSON: Expecting value: line 1 column 1 (char 0)
+
+Syntax Error while loading YAML.
+  could not find expected ':'
+
+The error appears to be in '/Users/simhaaj/home-lab/03-docker-install-centos/tasks/main.yml': line 89, column 7, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+    {
+      "exec-opts": ["native.cgroupdriver=systemd"],
+      ^ here
+We could be wrong, but this one looks like it might be an issue with
+unbalanced quotes. If starting a value with a quote, make sure the
+line ends with the same set of quotes. For instance this arbitrary
+example:
+
+    foo: "bad" "wolf"
+
+Could be written as:
+
+    foo: '"bad" "wolf"'
+
+2021-12-27 00:21:17,680 p=79663 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 00:21:17,712 p=79663 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 00:21:19,485 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:19,772 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:19,912 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:19,935 p=79663 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 00:21:19,958 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:19,976 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:19,987 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:20,000 p=79663 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 00:21:20,022 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:20,041 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:20,052 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:20,066 p=79663 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 00:21:20,089 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:20,110 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:20,123 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:20,137 p=79663 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 00:21:20,159 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:20,183 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:20,195 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:20,249 p=79663 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 00:21:23,068 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:23,110 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:23,114 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:23,129 p=79663 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 00:21:23,615 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:23,617 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:23,630 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:23,643 p=79663 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 00:21:23,669 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:23,686 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:23,700 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:23,743 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 00:21:24,293 p=79663 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 00:21:24,293 p=79663 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 00:21:25,296 p=79663 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 00:21:25,308 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 00:21:25,840 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:25,841 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:25,848 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:25,862 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 00:21:26,394 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:26,396 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:26,402 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:26,416 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 00:21:27,361 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:27,366 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:27,377 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:27,391 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 00:21:27,991 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:28,005 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:28,011 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:28,024 p=79663 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 00:21:28,381 p=79663 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 00:21:28,383 p=79663 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 00:21:28,394 p=79663 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 00:21:28,432 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-27 00:21:29,705 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:29,717 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:29,723 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:29,738 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-27 00:21:31,021 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:31,033 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:31,041 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:31,054 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-27 00:21:32,322 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:32,333 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:32,343 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:32,356 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-27 00:21:32,985 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:32,987 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:33,008 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:33,020 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-27 00:21:33,529 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:33,530 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:33,536 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:33,549 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-27 00:21:33,913 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:33,915 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:33,928 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:33,941 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-27 00:21:33,984 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:33,997 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:33,998 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:34,012 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-27 00:21:34,859 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:34,863 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:34,875 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:34,887 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-27 00:21:34,932 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:34,941 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:34,957 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:34,970 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-27 00:21:34,992 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:35,010 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:35,023 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:35,036 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-27 00:21:35,059 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:35,077 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:35,091 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:35,101 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-27 00:21:36,445 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:36,454 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:36,462 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:36,475 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Configure Docker daemon] **************************************************************************
+2021-12-27 00:21:37,308 p=79663 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 00:21:37,309 p=79663 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 00:21:37,312 p=79663 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 00:21:37,325 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-27 00:21:38,234 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:38,235 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:38,248 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:38,283 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-27 00:21:38,305 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,323 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,336 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,350 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-27 00:21:38,372 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,392 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,404 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,416 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-27 00:21:38,439 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,458 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,470 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,483 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-27 00:21:38,505 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,523 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,534 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,547 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-27 00:21:38,568 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,586 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,599 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,611 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-27 00:21:38,632 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,651 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,662 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,677 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-27 00:21:38,699 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,721 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,733 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,748 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-27 00:21:38,769 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,788 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,800 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,812 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-27 00:21:38,834 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,853 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,865 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,878 p=79663 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-27 00:21:38,899 p=79663 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 00:21:38,917 p=79663 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 00:21:38,930 p=79663 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 00:21:38,965 p=79663 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-27 00:21:39,591 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:39,597 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:39,617 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:39,628 p=79663 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Disable SELinux] *************************************************************************************
+2021-12-27 00:21:40,398 p=79663 u=simhaaj n=ansible | [WARNING]: SELinux state change will take effect next reboot
+
+2021-12-27 00:21:40,400 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:40,400 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:40,405 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:40,417 p=79663 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Install Kubernetes packages] *************************************************************************
+2021-12-27 00:21:40,955 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:40,956 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:40,982 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:40,995 p=79663 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Enable kubelet service] ******************************************************************************
+2021-12-27 00:21:41,766 p=79663 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 00:21:41,769 p=79663 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 00:21:41,781 p=79663 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 00:21:41,832 p=79663 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 00:21:41,833 p=79663 u=simhaaj n=ansible | nuc1                       : ok=24   changed=3    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 00:21:41,833 p=79663 u=simhaaj n=ansible | nuc2                       : ok=24   changed=3    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 00:21:41,833 p=79663 u=simhaaj n=ansible | nuc3                       : ok=24   changed=3    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 01:01:27,061 p=86322 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:01:27,087 p=86322 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:01:28,513 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:28,658 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:29,540 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:29,579 p=86322 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:01:29,600 p=86322 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:01:29,619 p=86322 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:01:29,630 p=86322 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:01:29,644 p=86322 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:01:29,666 p=86322 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:01:29,685 p=86322 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:01:29,697 p=86322 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:01:29,710 p=86322 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:01:29,733 p=86322 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:01:29,751 p=86322 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:01:29,763 p=86322 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:01:29,780 p=86322 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:01:29,807 p=86322 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:01:29,828 p=86322 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:01:29,841 p=86322 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:01:29,886 p=86322 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:01:32,876 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:33,039 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:33,061 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:33,075 p=86322 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:01:33,559 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:33,560 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:33,582 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:33,596 p=86322 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:01:33,620 p=86322 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:01:33,638 p=86322 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:01:33,651 p=86322 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:01:33,693 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:01:34,221 p=86322 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:01:35,219 p=86322 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:01:35,224 p=86322 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:01:35,237 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:01:35,760 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:35,762 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:35,762 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:35,794 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:01:36,338 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:36,339 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:36,342 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:36,357 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:01:37,311 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:37,312 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:37,313 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:37,325 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:01:37,925 p=86322 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:01:37,931 p=86322 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:01:37,940 p=86322 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:01:37,954 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:01:38,305 p=86322 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:01:38,308 p=86322 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:01:38,346 p=86322 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:01:38,360 p=86322 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:01:39,119 p=86322 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+missing required arguments: state
+
+2021-12-27 01:01:39,120 p=86322 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+missing required arguments: state
+
+2021-12-27 01:01:39,127 p=86322 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+missing required arguments: state
+
+2021-12-27 01:01:39,129 p=86322 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:01:39,130 p=86322 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:01:39,130 p=86322 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:01:39,130 p=86322 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:04:53,439 p=86775 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:04:53,460 p=86775 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:04:54,845 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:04:54,891 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:04:54,981 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:04:55,004 p=86775 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:04:55,027 p=86775 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:04:55,045 p=86775 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:04:55,058 p=86775 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:04:55,071 p=86775 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:04:55,093 p=86775 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:04:55,113 p=86775 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:04:55,125 p=86775 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:04:55,140 p=86775 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:04:55,162 p=86775 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:04:55,181 p=86775 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:04:55,193 p=86775 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:04:55,208 p=86775 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:04:55,231 p=86775 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:04:55,250 p=86775 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:04:55,262 p=86775 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:04:55,302 p=86775 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:04:58,558 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:04:58,791 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:04:58,820 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:04:58,834 p=86775 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:04:59,326 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:04:59,332 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:04:59,357 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:04:59,370 p=86775 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:04:59,393 p=86775 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:04:59,412 p=86775 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:04:59,426 p=86775 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:04:59,466 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:04:59,982 p=86775 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:04:59,985 p=86775 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:04:59,985 p=86775 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:05:00,000 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:05:00,514 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:05:00,520 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:05:00,528 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:05:00,544 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:05:01,072 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:05:01,074 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:05:01,081 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:05:01,096 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:05:02,035 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:05:02,037 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:05:02,045 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:05:02,059 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:05:02,650 p=86775 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:05:02,660 p=86775 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:05:02,674 p=86775 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:05:02,687 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:05:03,045 p=86775 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:05:03,046 p=86775 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:05:03,060 p=86775 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:05:03,075 p=86775 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:05:03,834 p=86775 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:05:03,835 p=86775 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.139709-87071-179516049652539/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.139709-87071-179516049652539/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.139709-87071-179516049652539/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_ansible.posix.firewalld_payload_O_UR30/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_ansible.posix.firewalld_payload_O_UR30/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.202 closed.
+
+
+2021-12-27 01:05:03,842 p=86775 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:05:03,843 p=86775 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.152006-87074-238401605686965/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.152006-87074-238401605686965/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.152006-87074-238401605686965/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_ansible.posix.firewalld_payload_ASgAQC/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_ansible.posix.firewalld_payload_ASgAQC/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.203 closed.
+
+
+2021-12-27 01:05:03,843 p=86775 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:05:03,843 p=86775 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.1219451-87070-141379325482206/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.1219451-87070-141379325482206/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585103.1219451-87070-141379325482206/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_ansible.posix.firewalld_payload_WyIzr1/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_ansible.posix.firewalld_payload_WyIzr1/ansible_ansible.posix.firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.201 closed.
+
+
+2021-12-27 01:05:03,847 p=86775 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:05:03,847 p=86775 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:05:03,848 p=86775 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:05:03,848 p=86775 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:07:11,139 p=87198 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:07:11,163 p=87198 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:07:12,566 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:12,714 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:13,573 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:13,611 p=87198 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:07:13,631 p=87198 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:07:13,651 p=87198 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:07:13,662 p=87198 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:07:13,676 p=87198 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:07:13,699 p=87198 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:07:13,720 p=87198 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:07:13,734 p=87198 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:07:13,749 p=87198 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:07:13,770 p=87198 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:07:13,789 p=87198 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:07:13,800 p=87198 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:07:13,818 p=87198 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:07:13,840 p=87198 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:07:13,859 p=87198 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:07:13,868 p=87198 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:07:13,912 p=87198 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:07:16,963 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:17,018 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:17,042 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:17,055 p=87198 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:07:17,543 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:17,547 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:17,557 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:17,570 p=87198 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:07:17,593 p=87198 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:07:17,612 p=87198 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:07:17,624 p=87198 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:07:17,665 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:07:18,198 p=87198 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:07:18,199 p=87198 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:07:18,200 p=87198 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:07:18,215 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:07:18,731 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:18,732 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:18,760 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:18,774 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:07:19,294 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:19,297 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:19,299 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:19,316 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:07:20,249 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:20,255 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:20,259 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:20,273 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:07:20,863 p=87198 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:07:20,864 p=87198 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:07:20,880 p=87198 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:07:20,894 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:07:21,255 p=87198 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:07:21,256 p=87198 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:07:21,314 p=87198 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:07:21,326 p=87198 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:07:22,058 p=87198 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:07:22,060 p=87198 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.3914292-87485-46064286010059/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.3914292-87485-46064286010059/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.3914292-87485-46064286010059/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_firewalld_payload_ZBvzjs/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_firewalld_payload_ZBvzjs/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.202 closed.
+
+
+2021-12-27 01:07:22,060 p=87198 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:07:22,060 p=87198 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.410505-87488-26904610690784/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.410505-87488-26904610690784/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.410505-87488-26904610690784/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_firewalld_payload_94CXQz/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_firewalld_payload_94CXQz/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.203 closed.
+
+
+2021-12-27 01:07:22,067 p=87198 u=simhaaj n=ansible | An exception occurred during task execution. To see the full traceback, use -vvv. The error was: ValueError: too many values to unpack
+2021-12-27 01:07:22,068 p=87198 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false,
+    "rc": 1
+}
+
+MSG:
+
+MODULE FAILURE
+See stdout/stderr for the exact error
+
+
+MODULE_STDOUT:
+
+Traceback (most recent call last):
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.375757-87484-131116346140956/AnsiballZ_firewalld.py", line 100, in <module>
+    _ansiballz_main()
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.375757-87484-131116346140956/AnsiballZ_firewalld.py", line 92, in _ansiballz_main
+    invoke_module(zipped_mod, temp_path, ANSIBALLZ_PARAMS)
+  File "/home/ansible/.ansible/tmp/ansible-tmp-1640585241.375757-87484-131116346140956/AnsiballZ_firewalld.py", line 41, in invoke_module
+    run_name='__main__', alter_sys=True)
+  File "/usr/lib64/python2.7/runpy.py", line 176, in run_module
+    fname, loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 82, in _run_module_code
+    mod_name, mod_fname, mod_loader, pkg_name)
+  File "/usr/lib64/python2.7/runpy.py", line 72, in _run_code
+    exec code in run_globals
+  File "/tmp/ansible_firewalld_payload_2mRhUY/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 1033, in <module>
+  File "/tmp/ansible_firewalld_payload_2mRhUY/ansible_firewalld_payload.zip/ansible_collections/ansible/posix/plugins/modules/firewalld.py", line 792, in main
+ValueError: too many values to unpack
+
+
+
+MODULE_STDERR:
+
+Shared connection to 192.168.1.201 closed.
+
+
+2021-12-27 01:07:22,072 p=87198 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:07:22,072 p=87198 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:07:22,073 p=87198 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:07:22,073 p=87198 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:09:54,283 p=87627 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:09:54,308 p=87627 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:09:55,688 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:09:55,701 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:09:55,852 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:09:55,875 p=87627 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:09:55,896 p=87627 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:09:55,915 p=87627 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:09:55,927 p=87627 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:09:55,941 p=87627 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:09:55,963 p=87627 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:09:55,982 p=87627 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:09:55,995 p=87627 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:09:56,010 p=87627 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:09:56,036 p=87627 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:09:56,066 p=87627 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:09:56,079 p=87627 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:09:56,108 p=87627 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:09:56,132 p=87627 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:09:56,152 p=87627 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:09:56,163 p=87627 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:09:56,203 p=87627 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:09:59,081 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:09:59,233 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:09:59,332 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:09:59,343 p=87627 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:09:59,822 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:09:59,835 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:09:59,844 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:09:59,858 p=87627 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:09:59,881 p=87627 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:09:59,900 p=87627 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:09:59,912 p=87627 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:09:59,954 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:10:00,485 p=87627 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:10:00,494 p=87627 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:10:00,495 p=87627 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:10:00,515 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:10:01,040 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:10:01,041 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:10:01,047 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:10:01,060 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:10:01,575 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:10:01,577 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:10:01,583 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:10:01,598 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:10:02,541 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:10:02,542 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:10:02,549 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:10:02,563 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:10:03,146 p=87627 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:10:03,151 p=87627 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:10:03,172 p=87627 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:10:03,187 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:10:03,543 p=87627 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:10:03,549 p=87627 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:10:03,576 p=87627 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:10:03,591 p=87627 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:10:04,345 p=87627 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:04,346 p=87627 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:04,362 p=87627 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:04,887 p=87627 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:04,894 p=87627 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:04,932 p=87627 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:05,442 p=87627 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:05,463 p=87627 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:05,496 p=87627 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:05,996 p=87627 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:06,005 p=87627 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:06,074 p=87627 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:10:06,079 p=87627 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:10:06,080 p=87627 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:10:06,080 p=87627 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:10:06,080 p=87627 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:04,868 p=89004 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:18:04,893 p=89004 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:18:06,286 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:06,307 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:06,485 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:06,508 p=89004 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:18:06,530 p=89004 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:06,548 p=89004 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:06,560 p=89004 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:06,574 p=89004 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:18:06,595 p=89004 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:06,616 p=89004 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:06,628 p=89004 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:06,642 p=89004 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:18:06,663 p=89004 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:06,684 p=89004 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:06,695 p=89004 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:06,712 p=89004 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:18:06,753 p=89004 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:06,754 p=89004 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:06,763 p=89004 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:06,804 p=89004 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:18:10,406 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:10,466 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:10,507 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:10,520 p=89004 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:18:11,001 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:11,005 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:11,022 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:11,036 p=89004 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:18:11,059 p=89004 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:11,078 p=89004 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:11,091 p=89004 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:11,136 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:18:11,662 p=89004 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:18:11,663 p=89004 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:18:12,669 p=89004 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:18:12,682 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:18:13,189 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:13,195 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:13,204 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:13,220 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:18:13,736 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:13,737 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:13,743 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:13,759 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:18:14,689 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:14,689 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:14,691 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:14,704 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:18:15,295 p=89004 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:15,305 p=89004 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:15,323 p=89004 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:15,336 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:18:15,685 p=89004 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:18:15,690 p=89004 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:18:15,702 p=89004 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:18:15,717 p=89004 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:18:16,471 p=89004 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:16,473 p=89004 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:16,483 p=89004 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,013 p=89004 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,016 p=89004 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,040 p=89004 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,570 p=89004 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,584 p=89004 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:17,624 p=89004 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:18,121 p=89004 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:18,142 p=89004 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:18,200 p=89004 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:18,205 p=89004 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:18:18,205 p=89004 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:18,205 p=89004 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:18,205 p=89004 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:39,995 p=89442 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:18:40,023 p=89442 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:18:41,356 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:41,362 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:41,497 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:41,524 p=89442 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:18:41,549 p=89442 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:41,569 p=89442 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:41,582 p=89442 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:41,598 p=89442 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:18:41,622 p=89442 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:41,643 p=89442 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:41,656 p=89442 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:41,672 p=89442 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:18:41,697 p=89442 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:41,722 p=89442 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:41,735 p=89442 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:41,751 p=89442 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:18:41,774 p=89442 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:41,797 p=89442 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:41,811 p=89442 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:41,869 p=89442 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:18:44,499 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:44,653 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:44,835 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:44,847 p=89442 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:18:45,355 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:45,397 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:45,398 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:45,413 p=89442 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:18:45,440 p=89442 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:18:45,463 p=89442 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:18:45,475 p=89442 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:18:45,524 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:18:46,060 p=89442 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:18:46,062 p=89442 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:18:47,068 p=89442 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:18:47,082 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:18:47,629 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:47,631 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:47,637 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:47,653 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:18:48,175 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:48,183 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:48,185 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:48,205 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:18:49,157 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:49,163 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:49,164 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:49,184 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:18:49,789 p=89442 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:18:49,802 p=89442 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:18:49,817 p=89442 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:18:49,832 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:18:50,201 p=89442 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:18:50,209 p=89442 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:18:50,226 p=89442 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:18:50,247 p=89442 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:18:51,032 p=89442 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:51,033 p=89442 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:51,047 p=89442 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:51,579 p=89442 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:51,603 p=89442 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:51,626 p=89442 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,144 p=89442 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,195 p=89442 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,196 p=89442 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,686 p=89442 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,743 p=89442 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,762 p=89442 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:18:52,768 p=89442 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:18:52,768 p=89442 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:52,769 p=89442 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:18:52,769 p=89442 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:20:15,905 p=90023 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:20:15,924 p=90023 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:20:17,301 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:17,303 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:17,431 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:17,454 p=90023 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:20:17,476 p=90023 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:20:17,495 p=90023 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:20:17,506 p=90023 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:20:17,519 p=90023 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:20:17,541 p=90023 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:20:17,563 p=90023 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:20:17,576 p=90023 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:20:17,591 p=90023 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:20:17,617 p=90023 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:20:17,640 p=90023 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:20:17,651 p=90023 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:20:17,667 p=90023 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:20:17,691 p=90023 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:20:17,711 p=90023 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:20:17,723 p=90023 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:20:17,763 p=90023 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:20:20,631 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:20,809 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:20,945 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:20,959 p=90023 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:20:21,446 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:21,447 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:21,491 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:21,504 p=90023 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:20:21,531 p=90023 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:20:21,550 p=90023 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:20:21,564 p=90023 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:20:21,607 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:20:22,137 p=90023 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:20:22,143 p=90023 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:20:22,149 p=90023 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:20:22,163 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:20:22,677 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:22,681 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:22,682 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:22,697 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:20:23,208 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:23,209 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:23,213 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:23,229 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:20:24,164 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:24,166 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:24,168 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:24,183 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:20:24,771 p=90023 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:20:24,772 p=90023 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:20:24,791 p=90023 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:20:24,805 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:20:25,150 p=90023 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:20:25,157 p=90023 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:20:25,176 p=90023 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:20:25,192 p=90023 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:20:25,961 p=90023 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:25,962 p=90023 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:25,978 p=90023 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:26,513 p=90023 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:26,516 p=90023 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:26,521 p=90023 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,061 p=90023 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,067 p=90023 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,081 p=90023 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,609 p=90023 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,611 p=90023 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,644 p=90023 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:20:27,650 p=90023 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:20:27,650 p=90023 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:20:27,651 p=90023 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:20:27,651 p=90023 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:22:39,884 p=91256 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:22:39,907 p=91256 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:22:41,319 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:41,350 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:41,472 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:41,496 p=91256 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:22:41,519 p=91256 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:22:41,538 p=91256 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:22:41,550 p=91256 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:22:41,566 p=91256 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:22:41,589 p=91256 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:22:41,610 p=91256 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:22:41,622 p=91256 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:22:41,637 p=91256 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:22:41,660 p=91256 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:22:41,681 p=91256 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:22:41,693 p=91256 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:22:41,708 p=91256 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:22:41,731 p=91256 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:22:41,749 p=91256 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:22:41,762 p=91256 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:22:41,804 p=91256 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:22:44,589 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:44,685 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:44,814 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:44,826 p=91256 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:22:45,307 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:45,316 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:45,346 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:45,359 p=91256 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:22:45,383 p=91256 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:22:45,403 p=91256 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:22:45,416 p=91256 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:22:45,462 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:22:45,991 p=91256 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:22:46,002 p=91256 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:22:46,002 p=91256 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:22:46,017 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:22:46,542 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:46,544 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:46,547 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:46,562 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:22:47,082 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:47,089 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:47,089 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:47,106 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:22:48,050 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:48,051 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:48,057 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:48,073 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:22:48,677 p=91256 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:22:48,682 p=91256 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:22:48,690 p=91256 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:22:48,704 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:22:49,060 p=91256 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:22:49,062 p=91256 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:22:49,080 p=91256 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:22:49,093 p=91256 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:22:49,861 p=91256 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:22:49,863 p=91256 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:22:49,875 p=91256 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:22:49,878 p=91256 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:22:49,879 p=91256 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:22:49,879 p=91256 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:22:49,879 p=91256 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:31:29,758 p=92815 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:31:29,784 p=92815 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:31:31,211 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:31,216 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:31,326 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:31,350 p=92815 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:31:31,372 p=92815 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:31:31,392 p=92815 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:31:31,401 p=92815 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:31:31,416 p=92815 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:31:31,439 p=92815 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:31:31,460 p=92815 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:31:31,471 p=92815 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:31:31,486 p=92815 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:31:31,509 p=92815 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:31:31,528 p=92815 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:31:31,540 p=92815 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:31:31,557 p=92815 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:31:31,580 p=92815 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:31:31,599 p=92815 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:31:31,611 p=92815 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:31:31,653 p=92815 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:31:34,985 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:35,060 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:35,124 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:35,138 p=92815 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:31:35,628 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:35,631 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:35,646 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:35,660 p=92815 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:31:35,685 p=92815 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:31:35,705 p=92815 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:31:35,718 p=92815 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:31:35,762 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:31:36,292 p=92815 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:31:36,295 p=92815 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:31:36,301 p=92815 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:31:36,315 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:31:36,827 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:36,830 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:36,833 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:36,848 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:31:37,372 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:37,372 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:37,375 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:37,390 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:31:38,338 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:38,339 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:38,342 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:38,354 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:31:38,948 p=92815 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:31:38,967 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:38,968 p=92815 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:31:38,983 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:31:39,335 p=92815 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:31:39,340 p=92815 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:31:39,357 p=92815 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:31:39,372 p=92815 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:31:40,155 p=92815 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:31:40,174 p=92815 u=simhaaj n=ansible | ERROR! The requested handler 'reload firewalld' was not found in either the main handlers list nor in the listening handlers list
+2021-12-27 01:35:14,678 p=94037 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:35:14,702 p=94037 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:35:16,110 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:16,129 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:16,214 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:16,237 p=94037 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:35:16,261 p=94037 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:35:16,280 p=94037 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:35:16,292 p=94037 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:35:16,306 p=94037 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:35:16,330 p=94037 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:35:16,351 p=94037 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:35:16,363 p=94037 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:35:16,378 p=94037 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:35:16,401 p=94037 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:35:16,421 p=94037 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:35:16,434 p=94037 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:35:16,450 p=94037 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:35:16,473 p=94037 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:35:16,494 p=94037 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:35:16,505 p=94037 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:35:16,547 p=94037 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:35:19,457 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:19,609 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:19,806 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:19,823 p=94037 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:35:20,327 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:20,333 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:20,356 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:20,373 p=94037 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:35:20,403 p=94037 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:35:20,426 p=94037 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:35:20,440 p=94037 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:35:20,488 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:35:21,028 p=94037 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:35:21,030 p=94037 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:35:21,031 p=94037 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:35:21,044 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:35:21,571 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:21,574 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:21,578 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:21,593 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:35:22,107 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:22,117 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:22,119 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:22,137 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:35:23,087 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:23,088 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:23,091 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:23,105 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:35:23,696 p=94037 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:35:23,701 p=94037 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:35:23,725 p=94037 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:35:23,741 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:35:24,098 p=94037 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:35:24,102 p=94037 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:35:24,127 p=94037 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:35:24,141 p=94037 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:35:24,902 p=94037 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:24,905 p=94037 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:24,918 p=94037 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:25,443 p=94037 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:25,457 p=94037 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:25,486 p=94037 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,016 p=94037 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,026 p=94037 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,050 p=94037 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,564 p=94037 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,569 p=94037 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,636 p=94037 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:35:26,641 p=94037 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:35:26,641 p=94037 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:35:26,641 p=94037 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:35:26,642 p=94037 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:38:39,195 p=94534 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:38:39,218 p=94534 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:38:40,566 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:40,578 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:40,696 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:40,720 p=94534 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:38:40,743 p=94534 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:38:40,762 p=94534 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:38:40,773 p=94534 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:38:40,788 p=94534 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:38:40,811 p=94534 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:38:40,831 p=94534 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:38:40,843 p=94534 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:38:40,857 p=94534 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:38:40,882 p=94534 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:38:40,902 p=94534 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:38:40,916 p=94534 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:38:40,932 p=94534 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:38:40,966 p=94534 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:38:40,998 p=94534 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:38:41,009 p=94534 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:38:41,051 p=94534 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:38:43,811 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:44,759 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:45,374 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:45,387 p=94534 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:38:45,879 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:45,902 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:45,903 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:45,917 p=94534 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:38:45,940 p=94534 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:38:45,962 p=94534 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:38:45,976 p=94534 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:38:46,020 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:38:46,538 p=94534 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:38:46,548 p=94534 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:38:47,547 p=94534 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:38:47,564 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:38:48,102 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:48,102 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:48,103 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:48,116 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:38:48,634 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:48,637 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:48,637 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:48,654 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:38:49,602 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:49,604 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:49,606 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:49,620 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:38:50,212 p=94534 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:38:50,214 p=94534 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:38:50,231 p=94534 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:38:50,245 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:38:50,596 p=94534 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:38:50,597 p=94534 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:38:50,616 p=94534 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:38:50,632 p=94534 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:38:51,395 p=94534 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:51,412 p=94534 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:51,424 p=94534 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:51,938 p=94534 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:51,983 p=94534 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:51,985 p=94534 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:52,486 p=94534 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:52,534 p=94534 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:52,554 p=94534 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:53,046 p=94534 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:53,092 p=94534 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:53,133 p=94534 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:38:53,137 p=94534 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:38:53,138 p=94534 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:38:53,138 p=94534 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:38:53,138 p=94534 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:40:33,610 p=95019 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:40:33,629 p=95019 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:40:35,031 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:35,050 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:35,159 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:35,186 p=95019 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:40:35,210 p=95019 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:40:35,231 p=95019 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:40:35,244 p=95019 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:40:35,260 p=95019 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:40:35,286 p=95019 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:40:35,308 p=95019 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:40:35,319 p=95019 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:40:35,337 p=95019 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:40:35,362 p=95019 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:40:35,384 p=95019 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:40:35,397 p=95019 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:40:35,415 p=95019 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:40:35,442 p=95019 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:40:35,465 p=95019 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:40:35,482 p=95019 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:40:35,554 p=95019 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:40:38,315 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:38,392 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:39,051 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:39,063 p=95019 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:40:39,551 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:39,553 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:39,584 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:39,597 p=95019 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:40:39,625 p=95019 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:40:39,646 p=95019 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:40:39,660 p=95019 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:40:39,703 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:40:40,234 p=95019 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:40:40,235 p=95019 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:40:41,246 p=95019 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:40:41,263 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:40:41,848 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:41,849 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:41,860 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:41,876 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:40:42,439 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:42,440 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:42,442 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:42,460 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:40:43,435 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:43,436 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:43,436 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:43,451 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:40:44,052 p=95019 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:40:44,055 p=95019 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:40:44,090 p=95019 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:40:44,104 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:40:44,453 p=95019 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:40:44,460 p=95019 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:40:44,474 p=95019 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:40:44,488 p=95019 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:40:45,266 p=95019 u=simhaaj n=ansible | failed: [nuc2] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:45,271 p=95019 u=simhaaj n=ansible | failed: [nuc3] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:45,280 p=95019 u=simhaaj n=ansible | failed: [nuc1] (item=6443/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "6443/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:45,810 p=95019 u=simhaaj n=ansible | failed: [nuc2] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:45,819 p=95019 u=simhaaj n=ansible | failed: [nuc3] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:45,838 p=95019 u=simhaaj n=ansible | failed: [nuc1] (item=2379-2380/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "2379-2380/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,355 p=95019 u=simhaaj n=ansible | failed: [nuc2] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,363 p=95019 u=simhaaj n=ansible | failed: [nuc3] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,413 p=95019 u=simhaaj n=ansible | failed: [nuc1] (item=10250-10252/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10250-10252/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,904 p=95019 u=simhaaj n=ansible | failed: [nuc2] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,932 p=95019 u=simhaaj n=ansible | failed: [nuc3] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,983 p=95019 u=simhaaj n=ansible | failed: [nuc1] (item=10255/tcp) => {
+    "ansible_loop_var": "item",
+    "changed": false,
+    "item": "10255/tcp"
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:40:46,987 p=95019 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:40:46,988 p=95019 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:40:46,988 p=95019 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:40:46,988 p=95019 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:41:50,420 p=95507 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:41:50,439 p=95507 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:41:51,768 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:51,802 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:51,914 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:51,938 p=95507 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:41:51,960 p=95507 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:41:51,979 p=95507 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:41:51,991 p=95507 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:41:52,004 p=95507 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:41:52,026 p=95507 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:41:52,044 p=95507 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:41:52,055 p=95507 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:41:52,069 p=95507 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:41:52,094 p=95507 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:41:52,113 p=95507 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:41:52,125 p=95507 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:41:52,140 p=95507 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:41:52,163 p=95507 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:41:52,181 p=95507 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:41:52,193 p=95507 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:41:52,238 p=95507 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:41:54,898 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:55,027 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:55,096 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:55,109 p=95507 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:41:55,592 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:55,600 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:55,613 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:55,628 p=95507 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:41:55,651 p=95507 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:41:55,672 p=95507 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:41:55,684 p=95507 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:41:55,726 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:41:56,248 p=95507 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:41:56,248 p=95507 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:41:57,255 p=95507 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:41:57,271 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:41:57,786 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:57,788 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:57,795 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:57,809 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:41:58,320 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:58,324 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:58,327 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:58,344 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:41:59,277 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:59,282 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:59,288 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:59,302 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:41:59,894 p=95507 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:41:59,897 p=95507 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:41:59,927 p=95507 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:41:59,940 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:42:00,297 p=95507 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:42:00,311 p=95507 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:42:01,290 p=95507 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:42:01,304 p=95507 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:42:02,066 p=95507 u=simhaaj n=ansible | fatal: [nuc2]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:42:02,066 p=95507 u=simhaaj n=ansible | fatal: [nuc3]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:42:02,071 p=95507 u=simhaaj n=ansible | fatal: [nuc1]: FAILED! => {
+    "changed": false
+}
+
+MSG:
+
+can only operate on port, service, rich_rule, masquerade, icmp_block, icmp_block_inversion, interface or source at once
+
+2021-12-27 01:42:02,074 p=95507 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:42:02,074 p=95507 u=simhaaj n=ansible | nuc1                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:42:02,075 p=95507 u=simhaaj n=ansible | nuc2                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:42:02,075 p=95507 u=simhaaj n=ansible | nuc3                       : ok=9    changed=2    unreachable=0    failed=1    skipped=5    rescued=0    ignored=0   
+2021-12-27 01:44:18,071 p=96640 u=simhaaj n=ansible | PLAY [nucs] ************************************************************************************************************************
+2021-12-27 01:44:18,092 p=96640 u=simhaaj n=ansible | TASK [Gathering Facts] *************************************************************************************************************
+2021-12-27 01:44:19,499 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:19,539 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:19,640 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:19,662 p=96640 u=simhaaj n=ansible | TASK [01-update-ubuntu : Update apt-get repo and cache] ****************************************************************************
+2021-12-27 01:44:19,685 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:19,706 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:19,718 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:19,733 p=96640 u=simhaaj n=ansible | TASK [01-update-ubuntu : Upgrade all apt packages] *********************************************************************************
+2021-12-27 01:44:19,758 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:19,781 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:19,793 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:19,807 p=96640 u=simhaaj n=ansible | TASK [01-update-ubuntu : Check if a reboot is needed on all servers] ***************************************************************
+2021-12-27 01:44:19,832 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:19,854 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:19,867 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:19,884 p=96640 u=simhaaj n=ansible | TASK [01-update-ubuntu : Reboot the box if kernel updated] *************************************************************************
+2021-12-27 01:44:19,907 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:19,926 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:19,938 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:19,980 p=96640 u=simhaaj n=ansible | TASK [01-update-centos : Update all installed packages using YUM module] ***********************************************************
+2021-12-27 01:44:22,825 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:22,953 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:23,359 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:23,371 p=96640 u=simhaaj n=ansible | TASK [01-update-centos : Remove packates not needed anymore] ***********************************************************************
+2021-12-27 01:44:23,860 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:23,861 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:23,880 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:23,894 p=96640 u=simhaaj n=ansible | TASK [01-update-centos : Reboot when packages were updated] ************************************************************************
+2021-12-27 01:44:23,917 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:23,938 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:23,948 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:23,990 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP since kubernetes can't work with swap enabled (1/2)] **********************************************
+2021-12-27 01:44:24,512 p=96640 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:44:24,521 p=96640 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:44:24,521 p=96640 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:44:24,535 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Disable SWAP in fstab since kubernetes can't work with swap enabled (2/2)] *************************************
+2021-12-27 01:44:25,052 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:25,060 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:25,065 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:25,080 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Make sure br_netfilter module is loaded] ***********************************************************************
+2021-12-27 01:44:25,593 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:25,594 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:25,594 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:25,609 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Add br_netfilter to k8s.conf file] *****************************************************************************
+2021-12-27 01:44:26,557 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:26,558 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:26,563 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:26,576 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Ensure iptables correctly see bridged traffic] *****************************************************************
+2021-12-27 01:44:27,170 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:27,183 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:27,189 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:27,202 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Run sysctl system] *********************************************************************************************
+2021-12-27 01:44:27,551 p=96640 u=simhaaj n=ansible | changed: [nuc1]
+2021-12-27 01:44:27,553 p=96640 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:44:27,573 p=96640 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:44:27,587 p=96640 u=simhaaj n=ansible | TASK [02-k8s-prep : Open ports for k8s in firewall] ********************************************************************************
+2021-12-27 01:44:28,387 p=96640 u=simhaaj n=ansible | changed: [nuc2]
+2021-12-27 01:44:28,389 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:28,395 p=96640 u=simhaaj n=ansible | changed: [nuc3]
+2021-12-27 01:44:28,434 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install yum utils] ********************************************************************************
+2021-12-27 01:44:29,779 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:29,852 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:30,754 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:30,765 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install device-mapper-persistent-data] ************************************************************
+2021-12-27 01:44:32,098 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:32,162 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:32,162 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:32,176 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install lvm2] *************************************************************************************
+2021-12-27 01:44:33,501 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:33,537 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:33,558 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:33,573 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Add Docker repo] **********************************************************************************
+2021-12-27 01:44:34,248 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:34,249 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:34,261 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:34,275 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Edge repo] **************************************************************************
+2021-12-27 01:44:34,802 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:34,822 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:34,825 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:34,840 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Enable Docker Test repo] **************************************************************************
+2021-12-27 01:44:35,193 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:35,197 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:35,221 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:35,237 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Initialize docker_installed variable] *************************************************************
+2021-12-27 01:44:35,278 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:35,281 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:35,293 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:35,307 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Check if rpm is already installed] ****************************************************************
+2021-12-27 01:44:36,212 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:36,213 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:36,217 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:36,231 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Conditionally set variable] ***********************************************************************
+2021-12-27 01:44:36,280 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:36,289 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:36,307 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:36,322 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Stop Docker service and disable] ******************************************************************
+2021-12-27 01:44:36,345 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:36,365 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:36,378 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:36,393 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Uninstall Docker] *********************************************************************************
+2021-12-27 01:44:36,416 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:36,437 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:36,450 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:36,464 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Install Docker] ***********************************************************************************
+2021-12-27 01:44:37,818 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:37,832 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:37,901 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:37,914 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Configure Docker daemon] **************************************************************************
+2021-12-27 01:44:38,514 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:38,522 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:38,529 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:38,542 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-centos : Start Docker service] *****************************************************************************
+2021-12-27 01:44:39,411 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:39,429 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:39,440 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:39,479 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Update apt cache] *********************************************************************************
+2021-12-27 01:44:39,500 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,520 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,533 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,547 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Upgrade all apt packages] *************************************************************************
+2021-12-27 01:44:39,570 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,590 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,601 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,615 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install dependencies] *****************************************************************************
+2021-12-27 01:44:39,639 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,661 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,673 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,686 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add an apt signing key for Docker] ****************************************************************
+2021-12-27 01:44:39,710 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,730 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,742 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,759 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add apt repository for stable version] ************************************************************
+2021-12-27 01:44:39,785 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,807 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,818 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,831 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Install Docker] ***********************************************************************************
+2021-12-27 01:44:39,854 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,873 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,885 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,899 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Add user to docker group] *************************************************************************
+2021-12-27 01:44:39,921 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:39,941 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:39,952 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:39,968 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Download docker-compose v2.2.2] *******************************************************************
+2021-12-27 01:44:39,992 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:40,012 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:40,024 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:40,040 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Check docker-compose exists] **********************************************************************
+2021-12-27 01:44:40,062 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:40,082 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:40,094 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:40,109 p=96640 u=simhaaj n=ansible | TASK [03-docker-install-ubuntu : Move docker-compose to /usr/local/bin/docker-compose] *********************************************
+2021-12-27 01:44:40,135 p=96640 u=simhaaj n=ansible | skipping: [nuc1]
+2021-12-27 01:44:40,155 p=96640 u=simhaaj n=ansible | skipping: [nuc2]
+2021-12-27 01:44:40,166 p=96640 u=simhaaj n=ansible | skipping: [nuc3]
+2021-12-27 01:44:40,206 p=96640 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Add kubernetes.repo] *********************************************************************************
+2021-12-27 01:44:40,801 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:40,803 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:40,829 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:40,842 p=96640 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Disable SELinux] *************************************************************************************
+2021-12-27 01:44:41,594 p=96640 u=simhaaj n=ansible | [WARNING]: SELinux state change will take effect next reboot
+
+2021-12-27 01:44:41,595 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:41,601 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:41,604 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:41,617 p=96640 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Install Kubernetes packages] *************************************************************************
+2021-12-27 01:44:42,166 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:42,172 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:42,200 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:42,213 p=96640 u=simhaaj n=ansible | TASK [04-k8s-install-centos : Enable kubelet service] ******************************************************************************
+2021-12-27 01:44:43,025 p=96640 u=simhaaj n=ansible | ok: [nuc2]
+2021-12-27 01:44:43,026 p=96640 u=simhaaj n=ansible | ok: [nuc3]
+2021-12-27 01:44:43,030 p=96640 u=simhaaj n=ansible | ok: [nuc1]
+2021-12-27 01:44:43,082 p=96640 u=simhaaj n=ansible | PLAY RECAP *************************************************************************************************************************
+2021-12-27 01:44:43,082 p=96640 u=simhaaj n=ansible | nuc1                       : ok=25   changed=2    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 01:44:43,082 p=96640 u=simhaaj n=ansible | nuc2                       : ok=25   changed=3    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 01:44:43,082 p=96640 u=simhaaj n=ansible | nuc3                       : ok=25   changed=3    unreachable=0    failed=0    skipped=18   rescued=0    ignored=0   
+2021-12-27 01:51:57,798 p=97632 u=simhaaj n=ansible | ERROR! conflicting action statements: hosts, firewalld
+
+The error appears to be in '/Users/simhaaj/home-lab/02-k8s-prep/tasks/main.yml': line 58, column 3, but may
+be elsewhere in the file depending on the exact syntax problem.
+
+The offending line appears to be:
+
+
+- name: Open ports for k8s in firewall for Master
+  ^ here
+

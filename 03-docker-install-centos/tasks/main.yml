@@ -81,9 +81,24 @@
     state: latest
   become: yes
 
+- name: Configure Docker daemon
+  copy:
+    dest: /etc/docker/daemon.json
+    content: |
+      {
+        "exec-opts": ["native.cgroupdriver=systemd"],
+        "log-driver": "json-file",
+        "log-opts": {
+        "max-size": "100m"
+        },
+        "storage-driver": "overlay2"
+      }
+
 - name: Start Docker service
-  service:
+  ansible.builtin.systemd:
     name: docker
     state: started
     enabled: yes
+    daemon_reload: yes
   become: yes
+  
